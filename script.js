@@ -18,8 +18,8 @@ Object.setPrototypeOf(Employee.prototype,Person.prototype);
 window.Person = Person;
 window.Employee = Employee;
 
-const person = new Person("Alice",25);
-person.greet();
-const employee = new Employee("Bob",30);
-employee.greet();
-employee.jobGreet();
+// const person = new Person("Alice",25);
+// person.greet();
+// const employee = new Employee("Bob",30);
+// employee.greet();
+// employee.jobGreet();
