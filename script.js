@@ -16,7 +16,7 @@ function Employee(name, age, jobTitle) {
 Employee.prototype = Object.create(Person.prototype);
 
 Employee.prototype.jobGreet = function () {
-	console.log("Hello, my name is "+this.name+" I am "+this.age+" years old.")
+	console.log("Hello, my name is "+this.name+" I am "+this.age+" years old, and my job title is "+this.jobTitle+".")
 }
 	//Object.setPrototypeOf(Person.prototype,Employee.prototype);
 // Do not change code below this line
@@ -25,6 +25,6 @@ window.Employee = Employee;
 
 const person = new Person("Alice",25);
 person.greet();
-const employee = new Employee("Bob",30);
+const employee = new Employee("Bob",30,"mana");
 employee.greet();
 employee.jobGreet();
